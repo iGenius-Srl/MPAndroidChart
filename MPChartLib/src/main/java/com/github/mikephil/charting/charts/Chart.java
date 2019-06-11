@@ -1438,7 +1438,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
      */
     public Bitmap getChartBitmap() {
         // Define a bitmap with the same size as the view
-        Bitmap returnedBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.RGB_565);
+        Bitmap returnedBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         // Bind a canvas to it
         Canvas canvas = new Canvas(returnedBitmap);
         // Get the view's background

@@ -21,10 +21,14 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true // this prevents "not mocked" error
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
     testImplementation 'junit:junit:4.12'
 }
 
